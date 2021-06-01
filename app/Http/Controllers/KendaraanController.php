@@ -15,7 +15,7 @@ class KendaraanController extends Controller
     public function index()
     {
         // return view('daftarkendaraan.index');
-        return view('daftarkendaraan.edit');
+        return view('daftarkendaraan.index');
     }
 
     /**
