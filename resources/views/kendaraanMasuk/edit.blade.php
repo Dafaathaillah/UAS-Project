@@ -1,7 +1,7 @@
 @extends('layouts.layout.master')
 
 @section('title')
-    | DAFTAR KENDARAAN
+    | FORM KENDARAAN MASUK
 @endsection
 
 @section('content')
@@ -11,8 +11,8 @@
             <div class="page-header-title">
                 <i class="feather icon-grid bg-c-blue"></i>
                 <div class="d-inline">
-                    <h5>MANAJEMEN DAFTAR KENDARAAN</h5>
-                    <span>EDIT DAFTAR KENDARAAN</span>
+                    <h5>KENDARAAN MASUK</h5>
+                    <span>Kendaraan Masuk</span>
                 </div>
             </div>
         </div>
@@ -22,7 +22,7 @@
                     <li class="breadcrumb-item">
                         <a href="index.html"><i class="feather icon-home"></i></a>
                     </li>
-                    <li class="breadcrumb-item"><a href="#!">Edit Daftar Kendaraan</a></li>
+                    <li class="breadcrumb-item"><a href="#!">KENDARAAN MASUK</a></li>
                 </ul>
             </div>
         </div>
@@ -36,7 +36,7 @@
                     <div class="card-header">
                         <div class="page-header-title">
                             <div class="d-inline">
-                                <h5>Form Edit Daftar Kendaraan</h5>
+                                <h5>Form Edit Daftar Kendaraan Masuk</h5>
                             </div>
                         </div>
                     </div>
@@ -44,15 +44,7 @@
                         <form method="post" action="#" id="myForm">
                         @csrf
                     @method('PUT') 
-                    <div class="card">
-                        <div class="card-header">
-                            <h5>Form</h5>
-                            <span>Add class of <code>.form-control</code> with
-                                <code>&lt;input&gt;</code> tag</span>
-                        </div>
-                        <div class="card-block">
-                            <form id="number_form" action="https://colorlib.com/"
-                                method="post" novalidate>
+                            <div class="card">
                                 <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">No Rangka</label>
                                     <div class="col-sm-10">
@@ -89,24 +81,23 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-sm-2 col-form-label">Status</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" name="Number" id="greater" placeholder="Status">
-                                        <span class="messages"></span>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Tahun Pembuatan</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" name="Number" id="greater" placeholder="Tahun Pembuatan">
                                         <span class="messages"></span>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
-                    </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Tanggal Masuk</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="Number" id="greater" placeholder="Tanggal Masuk">
+                                        <span class="messages"></span>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="float-right my-2">
                                 <button type="submit" class="btn btn-primary">Submit</button>
+                                <a class="btn btn-warning" href="{{ route('kendaraanmasuk.index') }}">Cancel</a>
                             </div>
                         </form>
                     </div>

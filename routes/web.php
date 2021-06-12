@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KendaraanController;
+use App\Http\Controllers\KendaraanMasukController;
+use App\Http\Controllers\KendaraanKeluarController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,3 +28,5 @@ Route::get('/admin', function () {
 });
 
 Route::resource('kendaraan', KendaraanController::class);
+Route::resource('kendaraanmasuk', KendaraanMasukController::class);
+Route::resource('kendaraankeluar', KendaraanKeluarController::class);

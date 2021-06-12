@@ -1,6 +1,6 @@
 @extends('layouts.layout.master')
 @section('title')
-    | DAFTAR KENDARAAN
+    | DAFTAR KENDARAAN KELUAR
 @endsection
 
 @section('content')
@@ -10,8 +10,8 @@
                 <div class="page-header-title">
                     <i class="feather icon-grid bg-c-blue"></i>
                     <div class="d-inline">
-                        <h5>DAFTAR KENDARAAN</h5>
-                        <span>Daftar Kendaraan</span>
+                        <h5>KENDARAAN KELUAR</h5>
+                        <span>Kendaraan Keluar</span>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                         <li class="breadcrumb-item">
                             <a href="index.html"><i class="feather icon-home"></i></a>
                         </li>
-                        <li class="breadcrumb-item"><a href="#!">DAFTAR KENDARAAN</a></li>
+                        <li class="breadcrumb-item"><a href="#!">KENDARAAN KELUAR</a></li>
                     </ul>
                 </div>
             </div>
@@ -32,6 +32,9 @@
             <div class="page-wrapper">
                 <div class="page-body">
     <div class="card">
+        <div class="card-header">
+            <a class="btn btn-primary feather icon-plus" href="#">Input Data Kendaraan Keluar</a>
+        </div>
         <div class="card-block table-border-style">
             <div class="table-responsive">
 
@@ -49,6 +52,7 @@
                                     <th>Warna</th>
                                     <th>Tahun Pembuatan</th>
                                     <th>Status</th>
+                                    <th>Penerima</th>
                                     <th width="280px">Action</th>
                                 </tr>
 
@@ -72,10 +76,6 @@
                                 </tr>
 
                             </table>
-                            <br>
-                            <div class="float-left my-2">
-                                <button type="submit" class="btn btn-primary">Cetak Daftar</button>
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 @extends('layouts.layout.master')
 
 @section('title')
-    | DAFTAR KENDARAAN
+    | FORM KENDARAAN KELUAR
 @endsection
 
 @section('content')
@@ -11,8 +11,8 @@
             <div class="page-header-title">
                 <i class="feather icon-grid bg-c-blue"></i>
                 <div class="d-inline">
-                    <h5>MANAJEMEN DAFTAR KENDARAAN</h5>
-                    <span>EDIT DAFTAR KENDARAAN</span>
+                    <h5>KENDARAAN Keluar</h5>
+                    <span>Kendaraan Keluar</span>
                 </div>
             </div>
         </div>
@@ -22,7 +22,7 @@
                     <li class="breadcrumb-item">
                         <a href="index.html"><i class="feather icon-home"></i></a>
                     </li>
-                    <li class="breadcrumb-item"><a href="#!">Edit Daftar Kendaraan</a></li>
+                    <li class="breadcrumb-item"><a href="#!">KENDARAAN KELUAR</a></li>
                 </ul>
             </div>
         </div>
@@ -36,7 +36,7 @@
                     <div class="card-header">
                         <div class="page-header-title">
                             <div class="d-inline">
-                                <h5>Form Edit Daftar Kendaraan</h5>
+                                <h5>Form Edit Daftar Kendaraan Keluar</h5>
                             </div>
                         </div>
                     </div>
@@ -89,16 +89,23 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-sm-2 col-form-label">Status</label>
+                                    <label class="col-sm-2 col-form-label">Tahun Pembuatan</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" name="Number" id="greater" placeholder="Status">
+                                        <input type="text" class="form-control" name="Number" id="greater" placeholder="Tahun Pembuatan">
                                         <span class="messages"></span>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-sm-2 col-form-label">Tahun Pembuatan</label>
+                                    <label class="col-sm-2 col-form-label">Tanggal Keluar</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" name="Number" id="greater" placeholder="Tahun Pembuatan">
+                                        <input type="text" class="form-control" name="Number" id="greater" placeholder="Tanggal Keluar">
+                                        <span class="messages"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Penerima</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="Number" id="greater" placeholder="Penerima">
                                         <span class="messages"></span>
                                     </div>
                                 </div>

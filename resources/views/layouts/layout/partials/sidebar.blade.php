@@ -21,11 +21,27 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="#" class="waves-effect waves-dark">
+                    <a href="daftarKendaraan/index" class="waves-effect waves-dark">
                         <span class="pcoded-micon">
                             <i class="feather icon-list"></i>
                         </span>
                         <span class="pcoded-mtext">Daftar Kendaraan</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#" class="waves-effect waves-dark">
+                        <span class="pcoded-micon">
+                            <i class="feather icon-list"></i>
+                        </span>
+                        <span class="pcoded-mtext">Kendaraan Masuk</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#" class="waves-effect waves-dark">
+                        <span class="pcoded-micon">
+                            <i class="feather icon-list"></i>
+                        </span>
+                        <span class="pcoded-mtext">Kendaraan Keluar</span>
                     </a>
                 </li>
             </ul>

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Kendaraan;
+use App\Models\KendaraanKeluar;
 use Illuminate\Http\Request;
 
-class KendaraanController extends Controller
+class KendaraanKeluarController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,9 @@ class KendaraanController extends Controller
      */
     public function index()
     {
-        return view('daftarkendaraan.edit');
-        // return view('daftarkendaraan.index');
-
+        // return view('kendaraanKeluar.index');
+        return view('kendaraanKeluar.edit');
+        // return view('kendaraanKeluar.create');
     }
 
     /**
@@ -43,10 +43,10 @@ class KendaraanController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Kendaraan  $kendaraan
+     * @param  \App\Models\KendaraanKeluar  $kendaraanKeluar
      * @return \Illuminate\Http\Response
      */
-    public function show(Kendaraan $kendaraan)
+    public function show(KendaraanKeluar $kendaraanKeluar)
     {
         //
     }
@@ -54,10 +54,10 @@ class KendaraanController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Kendaraan  $kendaraan
+     * @param  \App\Models\KendaraanKeluar  $kendaraanKeluar
      * @return \Illuminate\Http\Response
      */
-    public function edit(Kendaraan $kendaraan)
+    public function edit(KendaraanKeluar $kendaraanKeluar)
     {
         //
     }
@@ -66,10 +66,10 @@ class KendaraanController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Kendaraan  $kendaraan
+     * @param  \App\Models\KendaraanKeluar  $kendaraanKeluar
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Kendaraan $kendaraan)
+    public function update(Request $request, KendaraanKeluar $kendaraanKeluar)
     {
         //
     }
@@ -77,10 +77,10 @@ class KendaraanController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Kendaraan  $kendaraan
+     * @param  \App\Models\KendaraanKeluar  $kendaraanKeluar
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Kendaraan $kendaraan)
+    public function destroy(KendaraanKeluar $kendaraanKeluar)
     {
         //
     }
